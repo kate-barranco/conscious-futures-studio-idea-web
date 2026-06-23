@@ -77,7 +77,7 @@ nav {
   height: 100%;
   object-fit: cover;
   /* Kate is left of center in the frame — show her fully */
-  object-position: 35% center;
+  object-position: 35% 60%;
   display: block;
   transition: transform 0.6s var(--ease-out);
 }
@@ -352,7 +352,7 @@ a.recog-name:hover { color: #c97dd4; }
 .photo-strip { display: grid; grid-template-columns: 1fr; height: 260px; overflow: hidden; }
 .photo-strip img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .photo-strip img:first-child { object-position: center 30%; }
-.photo-strip img:last-child { object-position: center center; }
+.photo-strip img:last-child { object-position: center 35%; }
 
 /* ── FOOTER ── */
 footer { background: var(--navy); padding: 2.25rem 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
@@ -365,7 +365,7 @@ footer p { font-size: 0.68rem; color: rgba(245,241,232,0.28); }
 @media (max-width: 900px) {
   nav { padding: 0.85rem 1.5rem; }
   .hero { height: auto; min-height: 85vw; max-height: none; }
-  .hero-photo { object-position: 30% center; }
+  .hero-photo { object-position: 30% 60%; }
   .hero-content { bottom: 2rem; left: 1.5rem; max-width: 34ch; }
   .hero-quote { bottom: 2rem; right: 1.5rem; max-width: 28ch; }
   .hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
